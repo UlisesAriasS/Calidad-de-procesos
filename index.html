@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas de Componentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@0.7.2/dist/tailwind-ui.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Diagramas de Componentes</h1>
+            <nav>
+                <button id="menu-button" class="md:hidden block text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+                <ul id="menu" class="hidden md:flex space-x-4">
+                    <li><a href="#inicio" class="hover:underline">Inicio</a></li>
+                    <li><a href="#que-es" class="hover:underline">¿Qué es?</a></li>
+                    <li><a href="#para-que-se-usa" class="hover:underline">¿Para qué se usa?</a></li>
+                    <li><a href="#elementos-principales" class="hover:underline">Elementos Principales</a></li>
+                    <li><a href="#pasos-para-crear" class="hover:underline">Pasos para Crear</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto pt-20">
+        <section id="inicio" class="flex flex-col md:flex-row items-center justify-center h-screen my-8 shadow-lg p-8 bg-white">
+            <div class="w-full md:w-1/2">
+                <img src="img/i1.png" alt="Esquema visual" class="w-full h-auto">
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-4xl font-bold mb-4">Diagrama de Componentes</h2>
+                <h4 class="text-xl font-bold mb-4">¿Qué es un diagrama de Componentes?</h4>
+                <p>Un Diagrama de Componentes es un tipo de diagrama UML (Lenguaje Unificado de Modelado) que representa la estructura física de un sistema de software. Muestra cómo los diferentes componentes de un sistema están organizados y cómo interactúan entre sí.</p>
+                <p>Este diagrama es útil para visualizar la arquitectura de software y comprender cómo se comunican los módulos del sistema.</p>
+            </div>
+        </section>
+        <section id="que-es" class="flex flex-col md:flex-row items-center justify-center h-screen my-8 shadow-lg p-8 bg-white">
+            <div class="w-full md:w-1/2">
+                <img src="img/i.png" alt="Esquema visual" class="w-full h-auto">
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-xl font-bold mb-4">¿Qué es un Diagrama de Componentes?</h2>
+                <p>Un Diagrama de Componentes es un tipo de diagrama UML (Lenguaje Unificado de Modelado) que representa la estructura física de un sistema de software. Muestra cómo los diferentes componentes de un sistema están organizados y cómo interactúan entre sí.</p>
+                <p>Este diagrama es útil para visualizar la arquitectura de software y comprender cómo se comunican los módulos del sistema.</p>
+            </div>
+        </section>
+        <section id="para-que-se-usa" class="flex flex-col md:flex-row items-center justify-center h-screen my-8 shadow-lg p-8 bg-white">
+            <div class="w-full md:w-1/2">
+                <img src="img/i.png" alt="Esquema visual" class="w-full h-auto">
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-xl font-bold mb-4">¿Para qué se usa un Diagrama de Componentes?</h2>
+                <p>El diagrama de componentes se usa principalmente para:</p>
+                <ul class="list-disc list-inside">
+                    <li>Representar la estructura física de un sistema.</li>
+                    <li>Mostrar la relación entre los diferentes módulos y componentes.</li>
+                    <li>Facilitar el mantenimiento y escalabilidad del software.</li>
+                    <li>Identificar dependencias entre componentes.</li>
+                    <li>Documentar el sistema para desarrolladores y arquitectos de software.</li>
+                </ul>
+                <p>Es una herramienta esencial en la ingeniería de software, ya que permite modelar el sistema antes de su implementación y prever posibles problemas en la integración de componentes.</p>
+            </div>
+        </section>
+        <section id="elementos-principales" class="flex flex-col md:flex-row items-center justify-center h-screen my-8 shadow-lg p-8 bg-white">
+            <div class="w-full md:w-1/2">
+                <img src="img/i.png" alt="Esquema visual" class="w-full h-auto">
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-xl font-bold mb-4">Elementos principales de un Diagrama de Componentes</h2>
+                <p>Un diagrama de componentes está compuesto por los siguientes elementos esenciales:</p>
+                <ol class="list-decimal list-inside">
+                    <li>Componentes: Representan módulos de software, como bibliotecas, archivos ejecutables o paquetes. Se simbolizan con rectángulos que incluyen el nombre del componente.</li>
+                    <li>Interfaces: Son los puntos de conexión entre los componentes y permiten la comunicación entre ellos. Se representan con un círculo o una línea con un conector.</li>
+                    <li>Dependencias: Indican la relación entre los componentes y se representan con líneas punteadas.</li>
+                    <li>Artefactos: Son archivos físicos que contienen la implementación de los componentes (por ejemplo, archivos .jar, .dll, etc.).</li>
+                    <li>Conectores: Muestran cómo los componentes interactúan entre sí mediante flujos de información.</li>
+                </ol>
+            </div>
+        </section>
+        <section id="pasos-para-crear" class="flex flex-col md:flex-row items-center justify-center h-screen my-8 shadow-lg p-8 bg-white">
+            <div class="w-full md:w-1/2">
+                <img src="img/i.png" alt="Esquema visual" class="w-full h-auto">
+            </div>
+            <div class="w-full md:w-1/2 p-8">
+                <h2 class="text-xl font-bold mb-4">Pasos para crear un Diagrama de Componentes</h2>
+                <p>Para diseñar un diagrama de componentes, sigue estos pasos:</p>
+                <ol class="list-decimal list-inside">
+                    <li>Identificar los componentes del sistema: Define los módulos principales del software.</li>
+                    <li>Determinar las interfaces: Especifica cómo los componentes se comunican entre sí.</li>
+                    <li>Establecer relaciones y dependencias: Dibuja las conexiones entre los componentes según su interacción.</li>
+                    <li>Incluir artefactos si es necesario: Agrega archivos físicos o paquetes relevantes.</li>
+                    <li>Revisar y optimizar el diseño: Asegúrate de que el diagrama sea claro y refleje la estructura real del sistema.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
